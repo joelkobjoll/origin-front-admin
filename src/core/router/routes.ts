@@ -1,23 +1,25 @@
 import { generatePath } from 'react-router-dom';
 
 interface BaseRoutes {
-  root: string;
-  login: string;
-  submoduleList: string;
-  projects: string;
+  editEmployee: string;
   editProject: string;
   employees: string;
-  editEmployee: string;
+  login: string;
+  projects: string;
+  resetPassword: string;
+  root: string;
+  submoduleList: string;
 }
 
 const baseRoutes: BaseRoutes = {
-  root: '/',
-  login: '/login',
-  submoduleList: '/submodule-list',
-  projects: '/projects',
+  editEmployee: '/employees/:id',
   editProject: '/projects/:id',
   employees: '/employees',
-  editEmployee: '/employees/:id',
+  login: '/login',
+  projects: '/projects',
+  resetPassword: '/reset-password',
+  root: '/',
+  submoduleList: '/submodule-list',
 };
 
 interface Routes extends Omit<BaseRoutes, 'editProject' | 'editEmployee'> {
