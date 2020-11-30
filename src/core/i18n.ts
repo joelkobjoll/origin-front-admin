@@ -28,9 +28,12 @@ export const literals = {
       logout: 'Cerrar sesión',
     },
     fields: {
-      user: 'Usuario',
-      password: 'Contraseña',
       myProfile: 'Mi Perfil',
+      oldPassword: 'Antigua contraseña',
+      newPassword: 'Nueva contraseña',
+      repeatPassword: 'Repetir contraseña',
+      password: 'Contraseña',
+      user: 'Usuario',
     },
     date: {
       today: 'Hoy',
