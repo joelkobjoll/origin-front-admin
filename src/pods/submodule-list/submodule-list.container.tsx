@@ -4,6 +4,7 @@ import { DashboardItemProps } from 'common/components';
 import { routes } from 'core/router';
 import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
 import GroupIcon from '@material-ui/icons/Group';
+import LockIcon from '@material-ui/icons/Lock';
 
 export const SubmoduleListContainer: React.FunctionComponent = () => {
   const items: DashboardItemProps[] = React.useMemo(
@@ -17,6 +18,11 @@ export const SubmoduleListContainer: React.FunctionComponent = () => {
         title: 'Empleados',
         linkTo: routes.employees,
         icon: GroupIcon,
+      },
+      {
+        title: 'Cambiar clave',
+        linkTo: routes.resetPassword,
+        icon: LockIcon,
       },
     ],
     []

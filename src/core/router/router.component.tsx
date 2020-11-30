@@ -9,6 +9,7 @@ import {
   EmployeeListScene,
   ProjectScene,
   EmployeeScene,
+  ResetPasswordScene,
 } from 'scenes';
 
 export const RouterComponent: React.FunctionComponent = () => {
@@ -19,6 +20,11 @@ export const RouterComponent: React.FunctionComponent = () => {
           exact={true}
           path={[routes.root, routes.login]}
           component={LoginScene}
+        />
+        <Route
+          exact={true}
+          path={routes.resetPassword}
+          component={ResetPasswordScene}
         />
         <AuthRouterComponent
           exact={true}
